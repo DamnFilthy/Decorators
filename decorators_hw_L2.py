@@ -32,13 +32,11 @@ def path_logger(str_path, file_name):
     return logger
 
 
-# Применяем декоратор
 @path_logger('C:\\Users\\User\\Desktop\\logs', 'my_logs')
 def text_func(a, b):
     return a + ' ' + b + '!'
 
 
-# Тестируем декоратор
 text_func('Hello', 'World')
 
 
@@ -71,5 +69,4 @@ def get_json_top(filename, char, rating):
     return word_counts
 
 
-# Вызываем функцию
 get_json_top("text.json", 6, 10)
